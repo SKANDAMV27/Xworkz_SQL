@@ -54,7 +54,18 @@ Alter Table Student_details Rename column student_contact_number to phone_number
 Alter Table Student_details rename column student_marks to s_marks;
 Alter TAble Student_details reName column student_USN to s_USN;
 
-Alter Table pg_detaile rename column pg_location to pg_adress;
+Alter Table pg_detaile rename column pg_location to pg_address;
 Alter Table pg_detaile rename column pg_fees to pg_bill;
 Alter Table pg_detaile Rename column pg_contact_number to pg_number;
 Alter Table pg_detaile ReNAMe column pg_warden_name to warden_name;
+
+Alter Table car_detailes rename column car_color to color;
+Alter Table car_detailes rename column car_model to model;
+Alter TAble car_detailes reNAME column car_company to company;
+Alter TAble car_detailes REName column car_setter to setter;
+
+select*from car_detailes;
+select*from pg_detaile;
+select*from Hostipal_detailes;
+select*from Hostel_detailes;
+select*from Student_details;
