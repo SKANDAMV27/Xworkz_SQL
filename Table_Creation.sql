@@ -38,3 +38,5 @@ vehicle_model bigint,
 vehicle_number_of_owner bigint,
 vehicle_miglage bigint,
 vehicle_speed bigint);
+
+

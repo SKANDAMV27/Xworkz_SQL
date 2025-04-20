@@ -47,3 +47,14 @@ Alter Table Hostipal_detailes Rename column hostipal_name to h_name;
 Alter table Hostipal_detailes Rename column hostipal_location to h_adress;
 Alter table Hostipal_detailes rename column hostipal_fees to hostipal_bill;
 Alter table Hostipal_detailes Rename Column hostipal_contact_number to hospital_phon;
+
+
+Alter Table Student_details Rename column student_name to s_name;
+Alter Table Student_details Rename column student_contact_number to phone_number;
+Alter Table Student_details rename column student_marks to s_marks;
+Alter TAble Student_details reName column student_USN to s_USN;
+
+Alter Table pg_detaile rename column pg_location to pg_adress;
+Alter Table pg_detaile rename column pg_fees to pg_bill;
+Alter Table pg_detaile Rename column pg_contact_number to pg_number;
+Alter Table pg_detaile ReNAMe column pg_warden_name to warden_name;
