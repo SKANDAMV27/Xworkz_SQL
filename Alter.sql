@@ -1,4 +1,3 @@
-Create database Hostel;
 create Table Hostel_detailes(id int,hostel_name varchar(30),
 hostel_location varchar(30),
 hostel_fees bigint,
@@ -7,6 +6,7 @@ warden_name varchar(40),
 hostel_room_number bigint,
 hostel_owner_name varchar(50),
 Hostel_Type varchar(50));
+select * from Hostel_detailes;
 create database Hostipal;
 create Table Hostipal_detailes(id int,hostipal_name varchar(30),hostipal_location varchar(30),hostipal_fees bigint,hostipal_contact_number bigint,doctor_name varchar(50),hospital_ward_number bigint,hostipal_owner_name varchar(40),hospital_type varchar(50));
 create database Student;
