@@ -53,7 +53,82 @@ INSERT INTO Country_info
 VALUES 
 (1, 'India', 'New Delhi', 'Asia', 1393409038, 3287263, 'INR', 'Hindi, English', 'IST (UTC+5:30)', '1947-08-15', 'Federal Republic', 2875, 'Lion', 'Tiger', 'Jana Gana Mana', '+91', '.in', 'Droupadi Murmu', 1.0),
 (2, 'USA', 'Washington D.C.', 'North America', 331002651, 9833517, 'USD', 'English', 'EST (UTC-5)', '1776-07-04', 'Federal Republic', 21137518, 'Bald Eagle', 'Bald Eagle', 'The Star-Spangled Banner', '+1', '.us', 'Joe Biden', 0.7),
-(3, 'Australia', 'Canberra', 'Oceania', 25687041, 7692024, 'AUD', 'English', 'AEST (UTC+10)', '1788-01-26', 'Constitutional Monarchy', 1392687, 'Kangaroo', 'Red Kangaroo', 'Advance Australia Fair', '+61', '.au', 'Anthony Albanese', 1.1);
+(3, 'Australia', 'Canberra', 'Oceania', 25687041, 7692024, 'AUD', 'English', 'AEST (UTC+10)', '1788-01-26', 'Constitutional Monarchy', 1392687, 'Kangaroo', 'Red Kangaroo', 'Advance Australia Fair', '+61', '.au', 'Anthony Albanese', 1.1),
+(4, 'Japan', 'Tokyo', 'Asia', 126050804, 377975, 'JPY', 'Japanese', 'JST (UTC+9)', '660-02-11', 'Constitutional Monarchy', 4937000, 'Chrysanthemum', 'Koi Fish', 'Kimigayo', '+81', '.jp', 'Fumio Kishida', -0.20),
+(5, 'Germany', 'Berlin', 'Europe', 83783942, 357386, 'EUR', 'German', 'CET (UTC+1)', '1871-01-18', 'Federal Republic', 4223000, 'Eagle', 'Black Eagle', 'Das Lied der Deutschen', '+49', '.de', 'Frank-Walter Steinmeier', 0.20),
+(6, 'France', 'Paris', 'Europe', 65273511, 551695, 'EUR', 'French', 'CET (UTC+1)', '1792-09-22', 'Republic', 2939000, 'Gallic Rooster', 'Gallic Rooster', 'La Marseillaise', '+33', '.fr', 'Emmanuel Macron', 0.22),
+(7, 'Brazil', 'Brasilia', 'South America', 212559417, 8515767, 'BRL', 'Portuguese', 'BRT (UTC-3)', '1822-09-07', 'Federal Republic', 1839000, 'Southern Cross', 'Jaguar', 'Hino Nacional Brasileiro', '+55', '.br', 'Luiz Inácio Lula da Silva', 0.70),
+(8, 'South Africa', 'Pretoria', 'Africa', 59308690, 1221037, 'ZAR', 'Zulu, Xhosa, Afrikaans, English', 'SAST (UTC+2)', '1910-05-31', 'Republic', 419000, 'Springbok', 'Springbok', 'Nkosi Sikelel’ iAfrika', '+27', '.za', 'Cyril Ramaphosa', 1.30),
+(9, 'Russia', 'Moscow', 'Europe', 145912025, 17098246, 'RUB', 'Russian', 'MSK (UTC+3)', '1991-12-25', 'Federal Republic', 1483000, 'Bear', 'Bear', 'State Anthem of Russia', '+7', '.ru', 'Vladimir Putin', -0.20),
+(10, 'Canada', 'Ottawa', 'North America', 38005238, 9984670, 'CAD', 'English, French', 'EST (UTC-5)', '1867-07-01', 'Federal Parliamentary Democracy', 1834000, 'Maple Leaf', 'Beaver', 'O Canada', '+1', '.ca', 'Justin Trudeau', 0.70),
+(11, 'Mexico', 'Mexico City', 'North America', 128932753, 1964375, 'MXN', 'Spanish', 'CST (UTC-6)', '1810-09-16', 'Federal Republic', 1221000, 'Golden Eagle', 'Golden Eagle', 'Himno Nacional Mexicano', '+52', '.mx', 'Andrés Manuel López Obrador', 1.00),
+(12, 'Italy', 'Rome', 'Europe', 60461826, 301340, 'EUR', 'Italian', 'CET (UTC+1)', '1861-03-17', 'Republic', 2110000, 'White Lily', 'Italian Wolf', 'Il Canto degli Italiani', '+39', '.it', 'Sergio Mattarella', -0.10),
+(13, 'United Kingdom', 'London', 'Europe', 68207116, 243610, 'GBP', 'English', 'GMT (UTC+0)', '1707-05-01', 'Constitutional Monarchy', 3194000, 'Lion', 'Lion', 'God Save the King', '+44', '.uk', 'Charles III', 0.50),
+(14, 'Spain', 'Madrid', 'Europe', 46754778, 505990, 'EUR', 'Spanish', 'CET (UTC+1)', '1469-10-19', 'Constitutional Monarchy', 1460000, 'Bull', 'Bull', 'La Marcha Real', '+34', '.es', 'Pedro Sánchez', 0.10),
+(15, 'China', 'Beijing', 'Asia', 1444216107, 9596961, 'CNY', 'Mandarin', 'CST (UTC+8)', '1949-10-01', 'Communist State', 16862000, 'Panda', 'Giant Panda', 'March of the Volunteers', '+86', '.cn', 'Xi Jinping', 0.30),
+(16, 'New Zealand', 'Wellington', 'Oceania', 5084300, 268838, 'NZD', 'English, Maori', 'NZST (UTC+12)', '1907-09-26', 'Constitutional Monarchy', 250000, 'Silver Fern', 'Kiwi', 'God Defend New Zealand', '+64', '.nz', 'Chris Hipkins', 0.80),
+(17, 'Argentina', 'Buenos Aires', 'South America', 45376763, 2780400, 'ARS', 'Spanish', 'ART (UTC-3)', '1816-07-09', 'Federal Republic', 487000, 'Sun of May', 'Jaguar', 'Himno Nacional Argentino', '+54', '.ar', 'Javier Milei', 0.90),
+(18, 'Saudi Arabia', 'Riyadh', 'Asia', 35340680, 2149690, 'SAR', 'Arabic', 'AST (UTC+3)', '1932-09-23', 'Absolute Monarchy', 833500, 'Palm Tree', 'Camel', 'Aash Al Maleek', '+966', '.sa', 'Salman bin Abdulaziz', 1.60),
+(19, 'South Korea', 'Seoul', 'Asia', 51780579, 100210, 'KRW', 'Korean', 'KST (UTC+9)', '1948-08-15', 'Republic', 1800000, 'Mugunghwa', 'Korean Tiger', 'Aegukga', '+82', '.kr', 'Yoon Suk-yeol', 0.10),
+(20, 'UAE', 'Abu Dhabi', 'Asia', 9890402, 83600, 'AED', 'Arabic', 'GST (UTC+4)', '1971-12-02', 'Federal Absolute Monarchy', 421000, 'Falcon', 'Arabian Oryx', 'Ishy Bilady', '+971', '.ae', 'Mohammed bin Zayed', 1.20);
+
+
+select * from Country_info;
+update Country_info set country_name='Bharatha'
+where slno=1;
+
+update Country_info set president_name='Modi'
+where country_name='USA';
+
+update Country_info set national_animal='Dog'
+where slno=2;
+
+update Country_info set offical_language='Kannada'
+where slno=3;
+
+update Country_info set calling_code = '+32'
+where slno = 2;
+
+
+Delete from country_info 
+where slno in(1);
+
+delete from Country_info 
+WHERE Population > 1000000000 AND GDP < 3000;
+
+DELETE FROM Country_info
+ WHERE GDP < 1000000 OR Area > 9000000;
+ 
+ DELETE FROM Country_info 
+ WHERE GDP BETWEEN 1000000 AND 2000000;
+ 
+ select * from country_info
+ where country_name='India';
+ 
+ select * from  country_info;
+ 
+ SELECT * FROM Country_info 
+ WHERE Area > 8000000;
+ 
+ Select * from country_info
+ where population=25687041;
+ 
+ select * from country_info
+ where national_animal='Red Kangaroo' and time_zone='AEST (UTC+10)';
+ 
+ SELECT * FROM Country_info WHERE Population < 100000000 OR GDP > 2000000;
+ 
+ select * from Country_info where  continent='Asia';
+
+
+SELECT * FROM Country_info WHERE ID IN (1, 3);
+
+
+SELECT * FROM Country_info WHERE Continent NOT IN ('Oceania', 'Asia');
+
+
+SELECT * FROM Country_info WHERE GDP BETWEEN 1000000 AND 3000000;
+
 
 select* from country_info;
 
@@ -73,6 +148,7 @@ calling_code varchar(100),
 internet_tld varchar(100),
 landmark varchar(100),
 area_code varchar(100),
+
 founding_year int,
 state_flower varchar(100),
 state_bird varchar(100),
