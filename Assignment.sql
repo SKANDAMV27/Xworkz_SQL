@@ -76,6 +76,9 @@ where price not between 450000 and 85000;
 delete from mobile
 where mobile_color between 'black' and 'blue';
 
+delete from mobile
+where rating between 4 and 6;
+
 select * from mobile
 where mobile_color='black';
 
@@ -136,23 +139,64 @@ INSERT INTO college_sudent VALUES
 select * from college_sudent;
 
 
-UPDATE college_sudent SET city = 'Miami' WHERE student_id = 1;
-UPDATE college_sudent SET course = 'BSc IT' WHERE student_id = 2;
-UPDATE college_sudent SET age = 21 WHERE student_id = 3;
-UPDATE college_sudent SET gender = 'Female' WHERE student_id = 4;
-UPDATE college_sudent SET contact_number = 9998887776 WHERE student_id = 5;
-UPDATE college_sudent SET course = 'BCom' WHERE student_id = 6;
-UPDATE college_sudent SET city = 'Atlanta' WHERE student_id = 7;
-UPDATE college_sudent SET age = 23 WHERE student_id = 8;
-UPDATE college_sudent SET gender = 'Male' WHERE student_id = 9;
+UPDATE college_sudent SET city = 'Miami'
+ WHERE student_id = 1;
+UPDATE college_sudent SET course = 'BSc IT' WHERE
+ student_id = 2;
+UPDATE college_sudent SET age = 21
+ WHERE student_id = 3;
+UPDATE college_sudent SET gender = 'Female'
+ WHERE student_id = 4;
+UPDATE college_sudent SET contact_number = 9998887776
+ WHERE student_id = 5;
+UPDATE college_sudent SET course = 'BCom'
+ WHERE student_id = 6;
+UPDATE college_sudent SET city = 'Atlanta'
+ WHERE student_id = 7;
+UPDATE college_sudent SET age = 23 
+WHERE student_id = 8;
+UPDATE college_sudent SET gender = 'Male' 
+WHERE student_id = 9;
 UPDATE college_sudent SET contact_number = 8887776665 WHERE student_id = 10;
 
+SELECT * FROM college_sudent
+ WHERE gender = 'Male';
 
+SELECT * FROM college_sudent
+ WHERE age > 20 AND course = 'BSc IT';
+ 
+ SELECT * FROM college_sudent
+ WHERE city = 'Miami' OR city = 'Atlanta';
+ 
+ SELECT * FROM college_sudent 
+ WHERE course IN ('BSc CS', 'BCA');
+ 
+ SELECT * FROM college_sudent
+ WHERE course NOT IN ('BBA', 'BCom');
+ 
+ SELECT * FROM college_sudent 
+WHERE age BETWEEN 19 AND 22;
 
+SELECT * FROM college_sudent 
+WHERE student_id NOT BETWEEN 5 AND 15;
 
+delete from college_sudent
+where  student_id NOT BETWEEN 5 AND 15;
 
+delete from college_sudent 
+WHERE age BETWEEN 19 AND 22;
 
+delete from college_sudent
+WHERE course NOT IN ('BBA', 'BCom');
+ 
+delete from college_sudent 
+WHERE course IN ('BSc CS', 'BCA');
 
+delete from college_sudent
+ WHERE city = 'Miami' OR city = 'Atlanta';
+ 
+ select * from college_sudent;
+ 
 create database teacher;
 CREATE TABLE teacher (
     teacher_id INT PRIMARY KEY,
@@ -187,49 +231,82 @@ INSERT INTO teacher VALUES
 (20, 'Dorothy', 'Edwards', 'English', 7, 60000, 'Boston', 1987112341);
 
 
-UPDATE teacher SET city = 'Orlando' WHERE teacher_id = 1;
-UPDATE teacher SET salary = 75000 WHERE teacher_id = 2;
-UPDATE teacher SET subject = 'Computer Networks' WHERE teacher_id = 3;
-UPDATE teacher SET experience_years = 9 WHERE teacher_id = 4;
-UPDATE teacher SET city = 'Las Vegas' WHERE teacher_id = 5;
-UPDATE teacher SET salary = 68000 WHERE teacher_id = 6;
-UPDATE teacher SET experience_years = 10 WHERE teacher_id = 7;
-UPDATE teacher SET subject = 'Data Structures' WHERE teacher_id = 8;
-UPDATE teacher SET contact_number = 7778889990 WHERE teacher_id = 9;
-UPDATE teacher SET city = 'Austin' WHERE teacher_id = 10;
-
-SELECT * FROM college_sudent WHERE gender = 'Male';
-
-SELECT * FROM teacher WHERE subject = 'Physics';
-
-SELECT * FROM college_sudent WHERE age > 20 AND course = 'BSc IT';
-
-SELECT * FROM teacher WHERE salary > 60000 AND experience_years > 8;
-
-SELECT * FROM college_sudent WHERE city = 'Miami' OR city = 'Atlanta';
-
-SELECT * FROM teacher WHERE subject = 'Maths' OR subject = 'History';
-
-SELECT * FROM college_sudent WHERE course IN ('BSc CS', 'BCA');
-
-SELECT * FROM teacher WHERE city IN ('New York', 'Los Angeles');
-
-SELECT * FROM college_sudent WHERE course NOT IN ('BBA', 'BCom');
-
-SELECT * FROM teacher WHERE subject NOT IN ('Physics', 'Chemistry');
-
-SELECT * FROM college_sudent WHERE age BETWEEN 19 AND 22;
-
-SELECT * FROM teacher WHERE experience_years BETWEEN 5 AND 10;
-
-SELECT * FROM college_sudent WHERE student_id NOT BETWEEN 5 AND 15;
-
-SELECT * FROM teacher WHERE salary NOT BETWEEN 60000 AND 70000;
+UPDATE teacher SET city = 'Orlando'
+ WHERE teacher_id = 1;
+UPDATE teacher SET salary = 75000 
+WHERE teacher_id = 2;
+UPDATE teacher SET subject = 'Computer Networks'
+ WHERE teacher_id = 3;
+UPDATE teacher SET experience_years = 9
+ WHERE teacher_id = 4;
+UPDATE teacher SET city = 'Las Vegas'
+ WHERE teacher_id = 5;
+UPDATE teacher SET salary = 68000 
+WHERE teacher_id = 6;
+UPDATE teacher SET experience_years = 10 
+WHERE teacher_id = 7;
+UPDATE teacher SET subject = 'Data Structures'
+ WHERE teacher_id = 8;
+UPDATE teacher SET contact_number = 7778889990 
+WHERE teacher_id = 9;
+UPDATE teacher SET city = 'Austin'
+ WHERE teacher_id = 10;
 
 
+SELECT * FROM teacher 
+WHERE subject = 'Physics';
 
+SELECT * FROM teacher 
+WHERE salary > 60000 AND experience_years > 8;
 
+SELECT * FROM teacher 
+WHERE subject = 'Maths' OR subject = 'History';
 
+SELECT * FROM teacher 
+WHERE city IN ('New York', 'Los Angeles');
+
+SELECT * FROM teacher 
+WHERE subject NOT IN ('Physics', 'Chemistry');
+
+SELECT * FROM teacher
+ WHERE experience_years BETWEEN 5 AND 10;
+ 
+SELECT * FROM teacher 
+WHERE salary NOT BETWEEN 60000 AND 70000;
+
+delete from teacher 
+WHERE salary NOT BETWEEN 60000 AND 70000;
+
+delete from teacher
+where salary  between 60000 and 70000;
+
+delete from teacher
+where subject not IN ('Physics', 'Chemistry');
+
+delete  FROM teacher 
+WHERE subject = 'Maths' OR subject = 'History';
+
+delete  FROM teacher 
+WHERE salary > 60000 AND experience_years > 8;
+
+select *from teacher;
+
+select count(*) as count from teacher;
+
+select experience_years,count(*) as count_year from teacher;
+
+select first_name,sum(salary) as sum_salary from teacher;
+
+select first_name, max(salary) as salary_max from teacher;
+
+select last_name,min(salary) as salary_min from teacher;
+
+select avg(salary) as salary_avg from teacher;
+
+select first_name,max(salary) as experience_year from teacher group by salary;
+
+select last_name,sum(salary) as salary_sum from teacher group by last_name
+having last_name="Hill";
 
 
 
